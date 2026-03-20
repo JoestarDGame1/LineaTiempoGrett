@@ -48,4 +48,21 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   });
 
+    // 🔥 ACTIVAR ANIMACIONES AL HACER SCROLL
+  const eventos = document.querySelectorAll(".evento");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  eventos.forEach(evento => {
+    observer.observe(evento);
+  });
+  
 });
