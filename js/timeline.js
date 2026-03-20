@@ -28,11 +28,19 @@ momentos.forEach((m, i) => {
 });
 
 let cargadas = 0;
+let total = imagenes.length;
+
+// 🔥 seguridad: máximo espera 2 segundos
+setTimeout(() => {
+  document.querySelector(".timeline").style.opacity = "1";
+  document.body.style.opacity = "1";
+}, 2000);
 
 imagenes.forEach(img => {
-  img.onload = () => {
+  img.onload = img.onerror = () => {
     cargadas++;
-    if (cargadas === imagenes.length) {
+
+    if (cargadas === total) {
       document.querySelector(".timeline").style.opacity = "1";
       document.body.style.opacity = "1";
     }
