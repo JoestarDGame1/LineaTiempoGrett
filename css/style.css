@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: radial-gradient(circle at top, #1a1a1a 0%, #0a0a0a 70%);
+  color: white;
+  font-family: 'Georgia', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CONTENEDOR */
+.center {
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.15);
+  position: relative;
+}
+
+.center::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 20px;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(212, 175, 55, 0.15),
+    transparent
+  );
+  z-index: -1;
+  filter: blur(25px);
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+.italic {
+  font-style: italic;
+  margin-top: 15px;
+}
+
+.hint {
+  margin-top: 15px;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box; /* 🔥 CLAVE */
+  padding: 14px;
+  margin-top: 20px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.05);
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* BOTÓN */
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(135deg, #d4af37, #f5e6a6);
+  color: #1a1a1a;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* QUIZ */
+#quiz button {
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+}
+
+/* TIMELINE */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+}
+
+.evento {
+  border-left: 2px solid #d4af37;
+  padding-left: 15px;
+}
+
+.evento img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.final {
+  text-align: center;
+  margin: 50px;
+}
+
+/* ANIMACIÓN */
+.fade {
+  animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
