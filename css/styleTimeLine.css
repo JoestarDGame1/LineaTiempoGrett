@@ -4,9 +4,6 @@ body {
   background-attachment: fixed;
   color: white;
   font-family: 'Georgia', serif;
-
-  opacity: 1;
-  transition: opacity 1.5s ease;
 }
 
 /* TIMELINE */
@@ -15,9 +12,6 @@ body {
   max-width: 800px;
   margin: auto;
   padding: 60px 20px;
-
-  opacity: 0; /* 🔥 oculta hasta que cargue */
-  transition: opacity 1.5s ease;
 }
 
 /* LÍNEA CENTRAL */
@@ -25,7 +19,7 @@ body {
   content: '';
   position: absolute;
   width: 2px;
-  background: rgba(212,175,55,0.25);
+  background: rgba(212,175,55,0.3);
   top: 0;
   bottom: 0;
   left: 50%;
@@ -37,7 +31,6 @@ body {
   position: relative;
   width: 50%;
   padding: 20px;
-
   opacity: 0;
   transform: translateY(40px);
   transition: all 0.8s ease;
@@ -66,13 +59,7 @@ body {
   padding: 15px;
   border-radius: 15px;
   backdrop-filter: blur(10px);
-  box-shadow: 0 0 20px rgba(212,175,55,0.08);
-  transition: transform 0.3s ease;
-}
-
-/* ✨ EFECTO HOVER SUAVE */
-.contenido:hover {
-  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(212,175,55,0.1);
 }
 
 /* IMÁGENES */
@@ -80,14 +67,6 @@ body {
   width: 100%;
   margin-top: 10px;
   border-radius: 10px;
-
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-/* ✨ EFECTO IMAGEN */
-.contenido img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 25px rgba(212,175,55,0.2);
 }
 
 /* PUNTOS */
@@ -96,11 +75,10 @@ body {
   position: absolute;
   width: 12px;
   height: 12px;
-  background: #caa94a;
+  background: #d4af37;
   border-radius: 50%;
   top: 25px;
   right: -6px;
-  box-shadow: 0 0 10px rgba(202,169,74,0.5);
 }
 
 .evento.right::after {
@@ -111,7 +89,6 @@ body {
 .final {
   text-align: center;
   margin: 80px 20px;
-
   opacity: 0;
   transform: translateY(40px);
   transition: 1s;
