@@ -34,6 +34,7 @@ imagenes.forEach(img => {
     cargadas++;
     if (cargadas === imagenes.length) {
       document.querySelector(".timeline").style.opacity = "1";
+      document.body.style.opacity = "1";
     }
   };
 });
