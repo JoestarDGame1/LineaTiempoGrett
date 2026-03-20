@@ -6,6 +6,48 @@
   <title>Nuestra historia 💛</title>
   <link rel="stylesheet" href="css\styleTimeLine.css">
 </head>
+  <style>
+    .timeline {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  padding: 60px 20px;
+
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+    .intro {
+  position: fixed;
+  inset: 0;
+  background: #050505;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 1.8rem;
+}
+
+.intro p {
+  opacity: 0.7;
+}
+
+.intro button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(135deg, #caa94a, #e6d28f);
+  color: black;
+  font-weight: bold;
+}
+  </style>
+  
 <body>
 
 <div class="intro" id="intro">
