@@ -32,7 +32,7 @@ const momentos = [
   {
     fecha: "22 Noviembre 2025",
     texto: "Tú, tan bella como siempre ♾️💖✨",
-    imagen: "assets/img/7.png"
+    imagen: "assets/img/7.jpeg"
   },
   {
     fecha: "06 Diciembre 2025",
