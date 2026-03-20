@@ -32,41 +32,51 @@ const momentos = [
   {
     fecha: "22 Noviembre 2025",
     texto: "Tú, tan bella como siempre ♾️💖✨",
-    imagen: "assets/img/7.png"
+    imagen: "assets/img/7.jpeg"
   },
   {
     fecha: "06 Diciembre 2025",
     texto: "La fiesta de XV 🤍✨🥹",
-    imagen: "assets/img/8.png"
+    imagen: "assets/img/8.jpeg"
   },
   {
     fecha: "07 Diciembre 2025",
     texto: "Tarde de películas 🍿💛",
-    imagen: "assets/img/9.png"
+    imagen: "assets/img/9.jpeg"
   },
   {
     fecha: "13 Diciembre 2025",
     texto: "La fiesta donde te dijeron prima 😆💛",
-    imagen: "assets/img/10.png"
+    imagen: "assets/img/10.jpeg"
   },
   {
     fecha: "25 Enero 2026",
-    texto: "Otro día que guardo contigo 🥹💛✨",
-    imagen: "assets/img/11.png"
+    texto: "Trabajando para sorprender a alguien 🥹💛✨",
+    imagen: "assets/video/1.mp4" 
+  },
+  {
+    fecha: "09 Febrero 2026",
+    texto: "Terminando flores 🌹✨",
+    imagen: "assets/img/101.jpeg"
+  },
+  {
+    fecha: "13 Febrero 2026",
+    texto: "Topo Gigio listo  🐁🌹",
+    imagen: "assets/img/11.jpeg"
   },
   {
     fecha: "14 Febrero 2026",
     texto: "Nuestro primer 14 juntos 💘🌹",
-    imagen: "assets/img/12.png"
+    imagen: "assets/img/12.jpeg"
   },
   {
-    fecha: "08 Marzo 2026",
+    fecha: "06 Marzo 2026",
     texto: "Un día especial contigo 🌸💛",
-    imagen: "assets/img/13.png"
+    imagen: "assets/img/13.jpeg"
   },
   {
     fecha: "?? / ? / 2029",
     texto: "Si me lo permites… algún día seremos nosotros ♾️💍💛",
-    imagen: "assets/img/14.png"
+    imagen: "assets/img/2029.jpeg"
   }
 ];

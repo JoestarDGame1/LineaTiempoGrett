@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* RESET */
 body {
   margin: 0;
@@ -123,3 +124,129 @@ body {
     left: 4px;
   }
 }
+=======
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #1a1a1a 0%, #050505 80%);
+  background-attachment: fixed;
+  color: white;
+  font-family: 'Georgia', serif;
+}
+
+/* TIMELINE */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+/* LÍNEA CENTRAL */
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: rgba(212,175,55,0.3);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* EVENTOS */
+.evento {
+  position: relative;
+  width: 50%;
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+/* ANIMACIÓN ACTIVA */
+.evento.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* IZQUIERDA */
+.evento.left {
+  left: 0;
+  text-align: right;
+}
+
+/* DERECHA */
+.evento.right {
+  left: 50%;
+}
+
+/* CONTENIDO */
+.contenido {
+  background: rgba(255,255,255,0.04);
+  padding: 15px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(212,175,55,0.1);
+}
+
+/* IMÁGENES */
+.contenido img {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+/* PUNTOS */
+.evento::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #d4af37;
+  border-radius: 50%;
+  top: 25px;
+  right: -6px;
+}
+
+.evento.right::after {
+  left: -6px;
+}
+
+/* FINAL */
+.final {
+  text-align: center;
+  margin: 80px 20px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 1s;
+}
+
+.final.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 📱 MOBILE */
+@media (max-width: 600px) {
+
+  .timeline::before {
+    left: 10px;
+  }
+
+  .evento {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 10px;
+  }
+
+  .evento.left,
+  .evento.right {
+    left: 0;
+    text-align: left;
+  }
+
+  .evento::after {
+    left: 4px;
+  }
+}
+>>>>>>> 6927f25f480e3e1fac3ecbfb849bd618dad22c0f
