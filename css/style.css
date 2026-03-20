@@ -90,12 +90,14 @@ button {
   width: 100%;
 }
 
-/* TIMELINE */
 .timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  padding: 20px;
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  padding: 60px 20px;
+
+  opacity: 0; 
+  transition: opacity 1s ease;
 }
 
 .evento {
