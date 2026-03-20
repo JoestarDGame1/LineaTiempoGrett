@@ -38,3 +38,7 @@ imagenes.forEach(img => {
     }
   };
 });
+
+window.onload = () => {
+  document.body.style.opacity = "1";
+};
