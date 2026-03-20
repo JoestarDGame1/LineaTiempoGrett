@@ -5,7 +5,7 @@ body {
   color: white;
   font-family: 'Georgia', serif;
 
-  opacity: 0; /* 🔥 aparece suave */
+  opacity: 1;
   transition: opacity 1.5s ease;
 }
 
