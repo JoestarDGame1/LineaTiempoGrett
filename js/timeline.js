@@ -1,9 +1,9 @@
 const container = document.getElementById("timeline");
 
-// CREAR EVENTOS
+let imagenes = [];
+
 momentos.forEach((m, i) => {
   const div = document.createElement("div");
-
   div.classList.add("evento");
 
   if (i % 2 === 0) {
@@ -11,6 +11,10 @@ momentos.forEach((m, i) => {
   } else {
     div.classList.add("right");
   }
+
+  const img = new Image();
+  img.src = m.imagen;
+  imagenes.push(img);
 
   div.innerHTML = `
     <div class="contenido">
@@ -23,17 +27,13 @@ momentos.forEach((m, i) => {
   container.appendChild(div);
 });
 
-// ANIMACIÓN AL SCROLL
-const elementos = document.querySelectorAll(".evento, .final");
+let cargadas = 0;
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
+imagenes.forEach(img => {
+  img.onload = () => {
+    cargadas++;
+    if (cargadas === imagenes.length) {
+      document.querySelector(".timeline").style.opacity = "1";
     }
-  });
-}, {
-  threshold: 0.2
+  };
 });
-
-elementos.forEach(el => observer.observe(el));
