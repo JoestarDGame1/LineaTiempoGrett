@@ -32,3 +32,5 @@ function responder(i) {
     }
   }
 }
+
+mostrarPregunta();
