@@ -55,13 +55,18 @@ const momentos = [
     imagen: "assets/video/1.mp4" 
   },
   {
+    fecha: "3 Febrero 2026",
+    texto: "Flores en proceso 📸✨",
+    imagen: "assets/video/2.mp4" 
+  },
+  {
     fecha: "09 Febrero 2026",
     texto: "Terminando flores 🌹✨",
     imagen: "assets/img/101.jpeg"
   },
   {
     fecha: "13 Febrero 2026",
-    texto: "Topo Gigio listo  🐁🌹",
+    texto: "Topo Gigio listo 🐁🌹",
     imagen: "assets/img/11.jpeg"
   },
   {
@@ -75,7 +80,22 @@ const momentos = [
     imagen: "assets/img/13.jpeg"
   },
   {
-    fecha: "?? / ? / 2029",
+    fecha: "20 Marzo 2026",
+    texto: "6 meses🌹 y al dia siguiente flores amarillas🌻",
+    imagen: "assets/img/14.jpeg"
+  },
+  {
+    fecha: "21 Marzo 2026",
+    texto: "Un peinado especial contigo🫂🪮",
+    imagen: "assets/video/3.mp4"
+  },
+  {
+    fecha: "21 Marzo 2026",
+    texto: "Tan linda como siempre 🩷💛",
+    imagen: "assets/img/16.jpeg"
+  },
+  {
+    fecha: "?? / ? / 2030",
     texto: "Si me lo permites… algún día seremos nosotros ♾️💍💛",
     imagen: "assets/img/2029.jpeg"
   }

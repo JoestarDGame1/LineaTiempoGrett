@@ -1,6 +1,9 @@
 const container = document.getElementById("timeline");
 
-// CREAR EVENTOS
+function esVideo(ruta) {
+  return ruta.toLowerCase().endsWith(".mp4");
+}
+
 momentos.forEach((m, i) => {
   const div = document.createElement("div");
 
@@ -12,18 +15,30 @@ momentos.forEach((m, i) => {
     div.classList.add("right");
   }
 
+  let media;
+
+  if (esVideo(m.imagen)) {
+    media = `
+      <video class="media" autoplay muted loop playsinline>
+        <source src="${m.imagen}" type="video/mp4">
+        Tu navegador no soporta video
+      </video>
+    `;
+  } else {
+    media = `<img class="media" src="${m.imagen}">`;
+  }
+
   div.innerHTML = `
     <div class="contenido">
       <h3>${m.fecha}</h3>
       <p>${m.texto}</p>
-      <img src="${m.imagen}">
+      ${media}
     </div>
   `;
 
   container.appendChild(div);
 });
 
-// ANIMACIÓN AL SCROLL
 const elementos = document.querySelectorAll(".evento, .final");
 
 const observer = new IntersectionObserver((entries) => {

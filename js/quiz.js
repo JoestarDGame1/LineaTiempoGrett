@@ -1,4 +1,4 @@
-const seleccionadas = preguntas.sort(() => 0.5 - Math.random()).slice(0, 10);
+const seleccionadas = preguntas.sort(() => 0.5 - Math.random()).slice(0, 9);
 
 let index = 0;
 let puntaje = 0;
@@ -24,7 +24,7 @@ function responder(i) {
   if (index < seleccionadas.length) {
     mostrarPregunta();
   } else {
-    if (puntaje >= 8) {
+    if (puntaje >= 7) {
       window.location.href = "timeline.html";
     } else {
       alert("Casi… inténtalo otra vez 💛");
